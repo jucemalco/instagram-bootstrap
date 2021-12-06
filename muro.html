@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Muro Instagram</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i> Instagram</span>
+        <form class="form-inline">
+            <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success" type="button">Crear un nuevo
+                post</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Accion</a>
+                    <a class="dropdown-item" href="#">Otra accion</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Cerrar sesión</a>
+                </div>
+            </div>
+        </form>
+    </nav>
+
+    <!--Modal-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-light btn-sm">
+                        <i class="fas fa-camera"></i>
+                    </button>
+                    <button type="button" class="btn btn-light btn-sm">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Publicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones cambio de página -->
+
+    <nav aria-label="Page navigation example" style="margin-top:80px;">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link text-secondary" href="index.html">
+                    <i class="fas fa-th"></i></a>
+            </li>
+            <li class="page-item"><a class="page-link text-secondary" href="muro.html">■</a></li>
+        </ul>
+    </nav>
+
+    <!--Muro-->
+    
+    <div class="card mx-auto"  style="width: 700px;">
+        <div class="card-header">
+            <h4 class="titulo">Vacaciones</h4>
+            <button type="button" class="btn btn-link">12/14</button>
+        </div>
+        <img src="https://picsum.photos/id/678/550/400" class="img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">99 Likes</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+            <button type="button" class="btn btn-light btn-sm">
+                <i class="far fa-heart"></i>
+            </button>
+            <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+            <button type="button" class="btn btn-light btn-sm">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </div>
+    </div>
+    <div class="card mx-auto" style="width:700px;">
+        <div class="card-header">
+            <h4 class="titulo">Cocinando</h4>
+            <button type="button" class="btn btn-link">03/15</button>
+        </div>
+        <img src="https://picsum.photos/id/292/550/400" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">20 Likes</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+            <button type="button" class="btn btn-light btn-sm">
+                <i class="far fa-heart"></i>
+            </button>
+            <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+            <button type="button" class="btn btn-light btn-sm">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!---Muro-->
+    <div class="card mx-auto" style="width: 700px;">
+        <div class="card-header">
+            <h4 class="titulo">Un sueño</h4>
+            <button type="button" class="btn btn-link">05/15</button>
+        </div>
+        <img src="https://picsum.photos/id/724/550/400" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">115 Likes</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+            <button type="button" class="btn btn-light btn-sm">
+                <i class="far fa-heart"></i>
+            </button>
+            <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+            <button type="button" class="btn btn-light btn-sm">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </div>
+    </div>
+    <div class="card mx-auto" style="width: 700px;">
+        <div class="card-header">
+            <h4 class="titulo">Muchos mundos, muchas historias</h4>
+            <button type="button" class="btn btn-link">12/15</button>
+        </div>
+        <img src="https://picsum.photos/id/444/550/400" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">30 Likes</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare,
+                interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+            <button type="button" class="btn btn-light btn-sm">
+                <i class="far fa-heart"></i>
+            </button>
+            <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+            <button type="button" class="btn btn-light btn-sm">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
